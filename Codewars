@@ -37,3 +37,13 @@ function greet (name, owner) {
   }
   else return 'Hello guest'
 }
+
+
+
+//7kyu - find the missing number
+
+
+function missingNo(nums) {
+  
+  return nums.reduce((acc,cur)=> acc-cur,5050)
+}
