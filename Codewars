@@ -68,3 +68,9 @@ function oddOrEven(array) {
    
    return sum%2===0? 'even': 'odd'
 }
+
+//8kyu - Function 1 - hellow world
+
+function greet() {
+    return "hello world!";
+    }
