@@ -74,3 +74,17 @@ function oddOrEven(array) {
 function greet() {
     return "hello world!";
     }
+    
+    
+   
+//8kyu - Sum of differences in array
+
+function sumOfDifferences(arr) {
+    
+    
+    let newArr = arr.sort((a,b)=>b-a)
+    
+    if(arr[0]==undefined || arr[1]==undefined){return 0}
+
+    else return newArr[0]-newArr[newArr.length-1]
+  }
