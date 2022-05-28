@@ -88,3 +88,39 @@ function sumOfDifferences(arr) {
 
     else return newArr[0]-newArr[newArr.length-1]
   }
+  
+//6kyu - Write number in expanded form
+
+function expandedForm(num) {
+
+    let arr = num.toString().split('')
+
+    let newString = []
+
+    //console.log(`${arr[0]*Math.pow(10,arr.length-1)} + `)
+
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i]==0){
+            void(0)
+        }
+
+        else if(arr.length-1 === i){newString.push(`${arr[i]}`)}
+
+        //else if(arr.length-1 !== i){
+        else{    
+        newString.push(`${arr[i]*Math.pow(10,arr.length-1-i)} + `)
+        }
+
+        //else {newString.push(`${arr[i]}`)}
+    }
+
+    let completeString = newString.join('')
+
+    if(completeString.slice(-3)==' + '){
+        return completeString.slice(0,-3)
+    }
+
+    else {
+        return completeString
+    }
+}
