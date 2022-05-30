@@ -151,3 +151,13 @@ function countPositivesSumNegatives(input) {
 function pillars(num_pill, dist, width) {
   return num_pill>1?((num_pill-1)*dist*100)+((num_pill-2)*width):0
 }
+
+//7kyu - List Filtering
+
+function filter_list(l) {
+  let newL = []
+  l.map((x)=> {
+    x === Number(x)? newL.push(x):void(0)
+  })
+  return newL
+}
