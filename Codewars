@@ -200,3 +200,13 @@ var countDeafRats = function(town) {
   return lostRats
 }
 
+//7kyu - Find the capitals
+
+var capitals = function (word) {
+  let arr = []
+  for(let i = 0; i < word.length; i++){
+    word[i].toLowerCase()=== word[i]? void(0):arr.push(i)
+  }
+  return arr
+};
+
