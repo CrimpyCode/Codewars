@@ -161,3 +161,42 @@ function filter_list(l) {
   })
   return newL
 }
+
+
+//6kyu - The Deaf Rats of Hamelin
+
+var countDeafRats = function(town) {
+
+  let lostRats = 0
+
+  for(i=0; i<town.length; i++){
+    if (i<town.indexOf("P")) {
+      if (town[i]==='~'){
+      void(0)
+      i++
+    }
+      else if (town[i]==='O'){
+        lostRats += 1
+        i++
+      }
+      
+      else void(0)
+    }
+
+    if (i>town.indexOf('P')){
+      if (town[i]==='~'){
+        lostRats += 1
+        i++
+      }
+      else if (town[i]==='O'){
+          void(0)
+          i++
+        }
+        
+        else void(0)
+    }
+
+  }
+  return lostRats
+}
+
