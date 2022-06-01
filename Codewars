@@ -210,3 +210,9 @@ var capitals = function (word) {
   return arr
 };
 
+//8kyu - Removes String Spaces
+
+function noSpace(x){
+return x.split('').filter((x)=> x!==' ').join('')
+}
+
